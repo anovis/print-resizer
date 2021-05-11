@@ -1,0 +1,14 @@
+{
+  "name": "print-resizer",
+  "version": "1.0.0",
+  "description": "Resize autofit frames into printable pages",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.23.0"
+  }
+}
