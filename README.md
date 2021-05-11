@@ -13,7 +13,7 @@ For example
 
 **Before:** 
 
-![small before](images/layout.jpg?raw=true) 
+![small before](images/layout.png?raw=true) 
 
 **After:** 
 
