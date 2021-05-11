@@ -18,30 +18,40 @@ class PrintFrames {
     if (!this.page){
       this.page = createPage()
     }
+    console.log(this.height)
+    console.log(this.rowHeight)
+    console.log(item.height)
 
     if (this.width + item.width < PAGE_WIDTH){
+      console.log(1)
+
       this.page.appendChild(item)
       item.x = this.width + SPACING
       item.y = this.height
       this.width+= item.width + SPACING
       this.rowHeight = Math.max(item.height + SPACING, this.rowHeight)
     }
-    else if (this.width + item.width > PAGE_WIDTH &&  this.rowHeight + item.height < PAGE_HEIGHT){
+    else if (this.width + item.width > PAGE_WIDTH &&  this.height + this.rowHeight + item.height < PAGE_HEIGHT){
+      console.log(2)
+
       this.page.appendChild(item)
-      this.width = SPACING
-      this.height+=item.height + SPACING
-      item.x = this.width
+      this.height+=Math.max(item.height + SPACING, this.rowHeight) + SPACING
+      item.x = SPACING
       item.y = this.height
+      this.width = item.width + SPACING
+      this.rowHeight = item.height
     }
-    else if (this.width + item.width > PAGE_WIDTH &&  this.rowHeight + item.height > PAGE_HEIGHT)
+    else if (this.width + item.width > PAGE_WIDTH &&  this.height + this.rowHeight + item.height > PAGE_HEIGHT)
     {
+      console.log(3)
+
       this.page = createPage()
       this.page.appendChild(item)
       item.x = SPACING
       item.y = SPACING
       this.height = SPACING
       this.width = item.width + SPACING
-      this.rowHeight = this.height
+      this.rowHeight = item.height
     }
     else{
      console.log("Item is too big") 

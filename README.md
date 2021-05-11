@@ -1,7 +1,7 @@
 # Print Resizer - Figma plugin
 
-This plugin collects all components in a pages frames and rearanges them in new printable frame. This is especially helpful for 
-frames with autolayout which can scale in only one direction, making printing difficult.
+This plugin collects all components from frames in the current figma page and then copies and rearagndles them into new printable frames. The printable frames can then be exported and printed on regular letter head. This plugin is especially helpful for 
+frames with autolayout since they can only scale in only one direction, making printing difficult.
 
 ## How this plugin works
 
@@ -13,11 +13,21 @@ For example
 
 **Before:** 
 
-![small before](images/auto-layout.png?raw=true) 
+![auto-layout](images/auto-layout.png?raw=true) 
 
 **After:** 
 
-![small after](images/resized.png?raw=true)
+![resized](images/resized.png?raw=true)
+
+### Combine Multiple Frames into Printable Pages
+
+**Before:** 
+
+![multi frame](images/multi-frame.png?raw=true) 
+
+**After:** 
+
+![combined frame](images/combined-frame.png?raw=true)
 
 
 ## Issues
