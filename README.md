@@ -1,6 +1,9 @@
 # Print Resizer - Figma plugin
 
-This plugin collects all components from frames in the current figma page and then copies and rearagndles them into new printable frames. The printable frames can then be exported and printed on regular letter head. This plugin is especially helpful for 
+[![](https://img.shields.io/endpoint?url=https://figma-plugin-badges.vercel.app/api/installs/973303055878323341)](https://www.figma.com/community/plugin/973303055878323341/Print-Resizer)
+
+This is the home for  ['Print Resizer' Figma Plugin](https://www.figma.com/community/plugin/973303055878323341/Print-Resizer).
+This plugin collects all components from frames in the current figma page and then copies and rearranges them into new printable frames. The printable frames can then be exported and printed on regular letter head. This plugin is especially helpful for 
 frames with autolayout since they can only scale in only one direction, making printing difficult.
 
 ## How this plugin works

@@ -2,3 +2,4 @@ node_modules/*
 code.js
 dist
 .vscode
+.DS_Store
